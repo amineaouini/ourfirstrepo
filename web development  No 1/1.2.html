@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id= "beeperOne">Beeper</button>
+	<button class = "beeperTwo">Beeper 2</button>
+	<button class = "beeperThree">Beerper 3</button>
+	<div></div>
+	<p id = "output">HEY</p>
+	<input id = "color"></input>
+	<button id = "go">Click Me</button>
+	<img id="img1">
+	<button id="alert">alert</button>
+	<div id="secret">We should hide this!</div>
+	<script
+ 	 src="https://code.jquery.com/jquery-3.4.1.js"
+  	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  	crossorigin="anonymous"></script>
+  	<script type="text/javascript">
+  	$("#img1").attr("src", "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+	$('button#go').on('click', function(){ $('p#output').text( $('input#color').val() ).css('color', 'red'); };
+	$('button').on('click', function() {$('button').alert("hi")});
+	//4. -A  
+	$("#secret").hide();
+	$("body").css('background-color, red');
+	//6. -A | -C
+  </script>
+</body>
+</html>
